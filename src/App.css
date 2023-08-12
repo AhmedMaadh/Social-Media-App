@@ -194,6 +194,11 @@ form textarea {
 .header {
   margin-top: 10px;
 }
+.header p{
+  border-bottom: 2px solid var(--red-color);
+  width: fit-content;
+  margin: 10px auto;
+}
 .body {
   margin-top: 10px;
 }
