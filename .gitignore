@@ -1,7 +1,10 @@
 config
 .firebase
 firebase
-
+firebase.json
+.firebaseserc
+package-lock.json
+package.json
 
 # dependencies
 /node_modules
