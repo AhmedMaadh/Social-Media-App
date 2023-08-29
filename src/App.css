@@ -2,6 +2,7 @@
   --main-color: #5271ff;
   --second-color: #453f3f;
   --red-color: #ef3a5d;
+  --gray-color: rgb(228, 223, 223);
 }
 * {
   box-sizing: border-box;
@@ -132,7 +133,7 @@ body {
 /* end navbar */
 /* start creat post */
 .main .create-post {
-  background-color: rgb(228, 223, 223);
+  background-color: var(--gray-color);
   width: 300px;
   padding: 10px 10px;
   border-radius: 15px;
@@ -141,7 +142,7 @@ body {
   color: var(--second-color);
   cursor: pointer;
 }
-form {
+.create-post {
   margin: 30px auto 0 auto;
   width: 400px;
   background-color: #5271ff;
@@ -149,18 +150,17 @@ form {
   border-radius: 5px;
   max-width: 100%;
 }
-form .title-text {
+.create-post .title-text {
   width: 300px;
   padding: 10px 10px;
   margin: 10px 0px 10px 0px;
   border-radius: 5px;
   outline: none;
 }
-form p {
+.create-post p {
   margin: 5px 0px 10px 0px;
 }
-form textarea {
-  /* background-color: white; */
+.create-post textarea {
   border-radius: 5px;
   max-width: 100%;
   width: 300px;
@@ -184,7 +184,8 @@ form textarea {
   border-top: 2px solid var(--second-color);
   border-left: 2px solid var(--second-color);
 }
-/* Start Post */
+/* end create Post */
+/* the Post */
 .post {
   margin: 30px auto;
   /* margin: 10px; */
@@ -199,10 +200,69 @@ form textarea {
   width: fit-content;
   margin: 10px auto;
 }
+/* start body */
 .body {
   margin-top: 10px;
 }
-.like {
-  margin-top: 10px;
+.comments-label {
+  text-align: left;
+  margin-top: 20px;
 }
-/* end Post */
+.comment {
+  text-align: left;
+  padding: 5px 5px;
+  margin-top: 10px;
+  color: var(--second-color);
+}
+.comment .diaply-user-name {
+  margin-top: 5px;
+}
+.each-comment {
+  background-color: var(--gray-color);
+  text-align: left;
+  padding: 5px 5px;
+  margin-top: 15px;
+  color: var(--second-color);
+  border-left: 2px solid var(--red-color);
+}
+/* end body */
+/* start footer to comment */
+.footer {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  padding: 10px 10px;
+  border-top: 1px solid var(--gray-color);
+}
+.like {
+  margin-right: 3px;
+}
+.comment-form {
+  display: flex;
+  align-items: center;
+}
+.footer .type-comment {
+  padding: 7px 10px;
+  background-color: var(--gray-color);
+  color: var(--second-color);
+  width: 250px;
+  border-radius: 3px;
+  margin-left: 5px;
+  outline: none;
+  border: none;
+}
+.send-comment{
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: var(--main-color);
+  margin-left: 5px;
+}
+.send-comment:hover{
+  color: var(--red-color);
+}
+
+
+/* end footer to comment */
+/* end the Post */

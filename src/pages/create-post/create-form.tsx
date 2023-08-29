@@ -40,7 +40,7 @@ export const CreateForm = () => {
 
     return (
         <>
-        <form  className="container" onSubmit={handleSubmit(onCreatePost)}>
+        <form onSubmit={handleSubmit(onCreatePost)} className="create-post">
             <input className="title-text" placeholder="Title..." {...register("title")}/>
             <p style={{color: "black"}}>{errors?.title?.message}</p>
             <textarea placeholder="Description..."{...register("description")}/>

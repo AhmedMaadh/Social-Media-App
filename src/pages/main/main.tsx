@@ -13,7 +13,7 @@ export interface Post {
   userName: string,
 }
 export const Main = () => {
-  const [thePosts , setPosts] = useState<Post[] | null>(null)
+  const [thePosts , setPosts] = useState<Post[] | null>(null);
   const [user] = useAuthState(auth);
   const postsRef = collection(dataBase, "posts");
   const navigate = useNavigate();
